@@ -5,7 +5,7 @@ and display the name
  -->
 <%@groups.each do |group| %>
   <% group.employees_id.each do |employee| %>
-    <%=employee.name  %>
+    <%=Employee.find(employee).name  %>
   <% end %>
 <%end %>
 

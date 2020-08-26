@@ -4,6 +4,7 @@ class EmployeesController < ApplicationController
 
   def generate
     @groups = Group.generate
+    redirect_to generate_path
   end
 
 end
