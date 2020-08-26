@@ -1,0 +1,11 @@
+<!-- then in the views you will iterate over @groups
+and for each group you will iterate over the ids
+and find the user with that id
+and display the name
+ -->
+<%@groups.each do |group| %>
+  <% group.employees_id.each do |employee| %>
+    <%=employee.name  %>
+  <% end %>
+<%end %>
+
